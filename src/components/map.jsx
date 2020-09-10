@@ -1,6 +1,7 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react'
 import mapStyles from '../style/mapStyle.json'
+import axios from 'axios'
 
 class MapContainer extends React.Component{
   constructor(props) {
@@ -36,7 +37,23 @@ class MapContainer extends React.Component{
   }
 
   getMarkers = () => {
-       
+    axios.get('http://images.contelege.com.br/poi.json')
+      .then(response => {
+        const markers = response.data
+        console.log("markers:", markers)
+        this.setState({ markers })
+      })
+      .catch((error,msg) => {
+        console.log("error:", error)
+        console.log("msg:", msg)
+      })
+      .then(() => {
+        //always...
+      })
+  }
+
+  componentDidMount () {
+    this.getMarkers()
   }
 
   render() {
@@ -90,5 +107,5 @@ class MapContainer extends React.Component{
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDsDQe2ORZegW64b9768PG4EbmwtWLVeTc'
+  apiKey: 'AIzaSyCJ8nM3h36LQDNiJXvuKQ5mvUDMm7hcuQM'
 })(MapContainer)

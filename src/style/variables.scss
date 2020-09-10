@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+// Cores Principais
+$primary: #287eaf;
+$secondary: #e6a432;
+$background: #191b26;
+$text-color: #757575;
+$alert: #af2842;
+
+// Font
+$main-font: 'Poppins';
+$title-font: 'Bebas Neue';
+
+// Transições
+%transition_3o {
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+  }
+  %transition_3e{
+      -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  %transition_4o {
+    transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -ms-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+  }
+  %transition_4e{
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  // No Select
+  %no-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+  }

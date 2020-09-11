@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto Criado por Fernando Saad como parte do Teste para Desenvolvedor NodeJS Pleno
+
+## React + Google Maps JS API
+
+Desenvolvido em ReactJS,utilizando a API Javascript v3.0 do Google Maps.
 
 ## Available Scripts
 
